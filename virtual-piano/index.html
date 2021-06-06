@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Piano Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-    
+    <div class="main">
+        <h1>Virtual Piano Website</h1>
+        <h4>Project for WD-MINOR-MAY</h4>
+        <div class="board">
+            <div class="white button" data-key="b"></div>
+            <div class="black button" data-key="c"></div>
+            <div class="white button" data-key="cs"></div>
+            <div class="black button" data-key="d"></div>
+            <div class="white button" data-key="ds"></div>
+            <div class="white button" data-key="E"></div>
+            <div class="black button" data-key="F"></div>
+            <div class="white button" data-key="Fs"></div>
+            <div class="black button" data-key="G"></div>
+            <div class="white button" data-key="Gs"></div>
+            <div class="black button" data-key="A"></div>
+            <div class="white button" data-key="As"></div>
+            <div class="white button" data-key="B"></div>
+            <div class="black button" data-key="C"></div>
+            <div class="white button" data-key="Cs"></div>
+            <div class="black button" data-key="D"></div>
+            <div class="white button" data-key="Ds"></div>
+        </div>
+        <div id="bottom-text">
+            Made by Arshal Nuna Soren
+        </div>
+    </div>
+
+    <audio src="audio-keys/246-B.mp3" id="b"></audio>
+    <audio src="audio-keys/261-C.mp3" id="c"></audio>
+    <audio src="audio-keys/277-C-sharp.mp3" id="cs"></audio>
+    <audio src="audio-keys/293-D.mp3" id="d"></audio>
+    <audio src="audio-keys/311-D-sharp.mp3" id="ds"></audio>
+    <audio src="audio-keys/329-E.mp3" id=E"></audio>
+    <audio src="audio-keys/349-F.mp3" id="F"></audio>
+    <audio src="audio-keys/369F-sharp.mp3" id="Fs"></audio>
+    <audio src="audio-keys/391-G.mp3" id="G"></audio>
+    <audio src="audio-keys/415-G-sharp.mp3" id="Gs"></audio>
+    <audio src="audio-keys/440-A.mp3" id="A"></audio>
+    <audio src="audio-keys/466-A-sharp.mp3" id="As"></audio>
+    <audio src="audio-keys/495-B.mp3" id="B"></audio>
+    <audio src="audio-keys/523-C.mp3" id="C"></audio>
+    <audio src="audio-keys/545-C-sharp.mp3" id="Cs"></audio>
+    <audio src="audio-keys/587-D.mp3" id="D"></audio>
+    <audio src="audio-keys/622-D-sharp.mp3" id="Ds"></audio>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
