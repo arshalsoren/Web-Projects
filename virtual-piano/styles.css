@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Mate+SC&&family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
 * {
     margin: 0;
@@ -25,7 +25,7 @@
     font-size: 60px;
     margin-bottom: 10px;
     color:#ff759e;
-    font-family: 'Emilys Candy', cursive;
+    font-family: 'Mate SC', cursive;
   }
 
   h4 {
@@ -81,7 +81,7 @@
     left: 50%;
     padding: 12px;
     border-width: thick;
-    background-color: #eeebdd;
+    background-color: #cecece;
     border-color: #d44965;
     border-radius: 12px;
     font-size: 18px;
@@ -95,5 +95,4 @@
     font-size: 15px;
     margin-bottom: 12px;
     color: rgb(255, 255, 255);
-    font-family: 'Viaoda Libre', cursive;
   }
