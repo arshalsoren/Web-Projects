@@ -22,6 +22,7 @@ var color = [
     "linear-gradient(118deg, rgba(23,76,114,1) 20%, rgba(41,157,241,1) 50%, rgba(23,76,114,1) 80%)",
     "linear-gradient(118deg, rgba(42,29,20,1) 20%, rgba(219,133,73,1) 50%, rgba(42,29,20,1) 80%)",
     "linear-gradient(118deg, rgba(130,102,187,1) 20%, rgba(203,178,255,1) 50%, rgba(130,102,187,1) 80%)",
+    "linear-gradient(0deg, rgba(16,10,51,1) 27%, rgba(13,54,95,1) 48%, rgba(8,111,153,1) 100%, rgba(0,212,255,1) 100%)",
     "linear-gradient(to bottom, rgb(76,76,76) 0%,rgb(89,89,89) 10%,rgb(102,102,102) 19%,rgb(56,56,56) 36%,rgb(0,0,0) 74%,rgb(19,19,19) 100%)"
 ];
 var i = 0;
