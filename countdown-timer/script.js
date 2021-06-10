@@ -15,10 +15,14 @@ function timer() {
     const mins = Math.floor(totalSecs / 60) % 60;
     const secs = Math.floor(totalSecs) % 60;
 
-    daysId.innerHTML = days;
-    hoursId.innerHTML = hours;
-    minsId.innerHTML = mins;
-    secsId.innerHTML = secs;
+    daysId.innerHTML = timeFormat(days);
+    hoursId.innerHTML = timeFormat(hours);
+    minsId.innerHTML = timeFormat(mins);
+    secsId.innerHTML = timeFormat(secs);
+}
+
+function timeFormat(time){
+    return time < 10 ? `0${time}` : time;
 }
 
 // intial call
