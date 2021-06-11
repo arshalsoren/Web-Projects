@@ -1,18 +1,18 @@
-const addBtn = document.getElementById('add');
+const addBtn = document.getElementById("add");
 
-const texts=JSON.parse(localStorage.getItem('texts'));
+const texts = JSON.parse(localStorage.getItem("texts"));
 
-if(texts){
-    texts.forEach(text=>{
+if (texts) {
+    texts.forEach((text) => {
         addNewNote(text);
     });
 }
 
-addBtn.addEventListener('click', () => {
+addBtn.addEventListener("click", () => {
     addNewNote();
 });
 
-function addNewNote(text='') {
+function addNewNote(text = "") {
     const note = document.createElement('div');
     note.classList.add('note');
 
@@ -22,26 +22,29 @@ function addNewNote(text='') {
                 <button class="edit"><i class="far fa-edit"></i></button>
                 <button class="delete "><i class="far fa-trash-alt"></i></button>
             </div>
-            <div class="main hidden"></div>
-            <textarea></textarea>
+            <div class="main ${text ? "" : "hidden"}"></div>
+            <textarea class="main ${text ? "hidden" : ""}"></textarea>
         </div>
     `;
-    
+
     const editBtn = note.querySelector('.edit');
     const deleteBtn = note.querySelector('.delete');
 
     const main = note.querySelector('.main');
     const textArea = note.querySelector('textarea');
 
-    textArea.value=text;
+    textArea.value = text;
+    main.innerHTML = marked(text);
 
     editBtn.addEventListener('click', () => {
         main.classList.toggle('hidden');
         textArea.classList.toggle('hidden');
     });
 
-    deleteBtn.addEventListener('click',()=>{
+    deleteBtn.addEventListener('click', () => {
         note.remove();
+
+        updateLocalStorage();
     });
 
     textArea.addEventListener('input', (e) => {
@@ -54,12 +57,12 @@ function addNewNote(text='') {
     document.body.appendChild(note);
 }
 
-function updateLocalStorage(){
-    const storeText=document.querySelectorAll('textarea');
+function updateLocalStorage() {
+    const storeText = document.querySelectorAll('textarea');
 
-    const texts=[];
+    const texts = [];
 
-    storeText.forEach(text =>{
+    storeText.forEach((text) => {
         texts.push(text.value);
     });
 
