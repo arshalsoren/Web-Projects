@@ -9,14 +9,14 @@ function addNewNote() {
     note.classList.add('note');
 
     note.innerHTML = `
-    <div class="notes">
-        <div class="tools">
-            <button class="edit"><i class="far fa-edit"></i></button>
-            <button class="delete "><i class="far fa-trash-alt"></i></button>
+        <div class="notes">
+            <div class="tools">
+                <button class="edit"><i class="far fa-edit"></i></button>
+                <button class="delete "><i class="far fa-trash-alt"></i></button>
+            </div>
+            <div class="main hidden"></div>
+            <textarea></textarea>
         </div>
-        <div class="main hidden"></div>
-        <textarea></textarea>
-    </div>
     `;
     
     const editBtn = note.querySelector('.edit');
