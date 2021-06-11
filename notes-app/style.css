@@ -1,51 +1,63 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: crimson;
     display: flex;
     flex-wrap: wrap;
-
     margin: 0;
 }
 
-.notes{
+.add {
+    background-color: rgb(107, 15, 61);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.note {
     background-color: white;
     margin: 20px;
     height: 400px;
     width: 400px;
 }
 
-.notes .tools{
-    background-color:rgb(107, 15, 61);
+.note .tools {
+    background-color: rgb(107, 15, 61);
     padding: 0.5rem;
     display: flex;
     justify-content: flex-end;
 }
 
-.notes .tools button{
-    background-color:transparent;
+.note .tools button {
+    background-color: transparent;
     border: none;
+    cursor: pointer;
     color: rgb(255, 255, 255);
     font-size: 1rem;
     margin-left: 0.5rem;
 }
 
-.notes .main{
+.note .main {
     background-color: #fff;
     overflow: hidden;
     height: 400px;
     width: 100%;
 }
 
-.notes textarea{
+.note textarea {
     outline: none;
     border: none;
     height: 400px;
     width: 100%;
 }
 
-.notes .hidden{
+.note .hidden {
     display: none;
 }
