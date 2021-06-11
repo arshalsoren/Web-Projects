@@ -3,5 +3,44 @@
 }
 
 body{
+    background-color: crimson;
+    display: flex;
+    flex-wrap: wrap;
+
     margin: 0;
+}
+
+.notes{
+    background-color: wheat;
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.notes .tools{
+    background-color:rgb(107, 15, 61);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.notes .tools button{
+    background-color:transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.notes .main{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.notes textarea{
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
 }
