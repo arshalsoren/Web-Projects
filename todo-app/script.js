@@ -12,19 +12,39 @@ function addTasks() {
     const taskText = input.value;
 
     if (taskText) {
-        const val = document.createElement("li");
-        val.innerText = taskText;
+        const newTask = document.createElement("li");
+        newTask.innerText = taskText;
 
-        val.addEventListener('click', () => {
-            val.classList.toggle('completed');
+        newTask.addEventListener('click', () => {
+            newTask.classList.toggle('completed');
+
+            updateLocalStorage();
         });
 
-        val.addEventListener("contextmenu", (e) => {
+        newTask.addEventListener("contextmenu", (e) => {
             e.preventDefault();
-            val.remove();
+            newTask.remove();
+
+            updateLocalStorage();
         });
 
-        tasks.appendChild(val);
+        tasks.appendChild(newTask);
         input.value = "";
+
+        updateLocalStorage();
     }
+}
+
+function updateLocalStorage(){
+    const tasksEl=document.querySelectorAll("li");
+
+    const tasks=[];
+    tasksEl.forEach((task)=>{
+        tasks.push({
+            text: task.innerText,
+            taskStatus: task.classList.contains("completed"),
+        });
+    });
+
+    localStorage.setItem("tasks",JSON.stringify(tasks));
 }
