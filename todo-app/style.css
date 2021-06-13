@@ -3,5 +3,30 @@
 }
 
 body{
+    background-color: #F4F4F4;
     margin: 0;
+}
+
+h1{
+    color: purple;
+    font-size: 8rem;
+    text-align: center;
+    opacity: 0.3;
+}
+
+form{
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.input{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+}
+
+.input::placeholder{
+    color: #b5b5b5;
 }
