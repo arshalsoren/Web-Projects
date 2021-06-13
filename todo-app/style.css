@@ -4,6 +4,10 @@
 
 body {
     background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -15,14 +19,13 @@ h1 {
 }
 
 form {
-    width: 400px;box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     max-width: 100%;
-    margin: auto;
 }
 
 .input {
     border: none;
-    
     font-size: 2rem;
     padding: 1rem 2rem;
     display: block;
@@ -49,7 +52,12 @@ form {
     padding: 1rem 2rem;
 }
 
-.tasks li.completed{
+.tasks li.completed {
     color: #b5b5b5;
     text-decoration: line-through;
+}
+
+small{
+    color: #b5b5b5;
+    margin-top: 2.5rem;
 }
