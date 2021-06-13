@@ -5,6 +5,10 @@ const tasks = document.getElementById('tasks');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    addTasks();
+});
+
+function addTasks() {
     const taskText = input.value;
 
     if (taskText) {
@@ -23,4 +27,4 @@ form.addEventListener('submit', (e) => {
         tasks.appendChild(val);
         input.value = "";
     }
-});
+}
