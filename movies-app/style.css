@@ -20,11 +20,11 @@ header {
     border: 2px solid #0F111A;
     font-size: 1rem;
     padding: 0.4rem;
-    color: #d4d4d4;
+    color: #e6e6e6;
 }
 
 .search::placeholder {
-    color: #d4d4d4;
+    color: #e6e6e6;
 }
 
 .search:focus {
@@ -52,7 +52,7 @@ main {
 }
 
 .movie-info {
-    color: #d4d4d4;
+    color: #e6e6e6;
     display: flex;
     align-items: center;
     justify-content: space-between;
