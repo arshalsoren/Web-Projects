@@ -3,5 +3,37 @@
 }
 
 body{
+    background-color: #0F111A;
     margin: 0;
+}
+
+.movie{
+    background-color: #292e46;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgab(0,0,0,0.2);
+    margin: 2rem;
+    width: 300px;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    color: #b5b5b5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span{
+    background-color: #0F111A;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
 }
