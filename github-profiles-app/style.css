@@ -4,7 +4,7 @@
 
 body {
     background-color: #e899dc;
-    background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
+background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,13 +62,25 @@ input::placeholder {
     max-width: 300px;
 }
 
-.user-info ul li{
+.user-info ul li {
     display: flex;
     align-items: center;
     font-size: 1.1rem;
 }
 
-.user-info ul li strong{
+.user-info ul li strong {
     font-size: 0.9rem;
-    margin-left: 0.3rem ;
+    margin-left: 0.3rem;
+}
+
+.repo {
+    background-color: #5e0841fa;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
 }
