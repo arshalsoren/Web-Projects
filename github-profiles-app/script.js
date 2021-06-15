@@ -4,6 +4,8 @@ const main = document.getElementById('main');
 const form = document.getElementById('form');
 const search = document.getElementById('search');
 
+getUserInfo('arshalsoren');
+
 async function getUserInfo(user) {
     const response = await fetch(API_URL + user);
     const responseData = await response.json();
@@ -15,16 +17,16 @@ function newUserCard(user) {
     const cardData = `
         <div class="card">
             <div>
-                <img src="${user.avatar_url}" alt="${user.name}" />
+                <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
             </div>
-            <div>
+            <div class="user-info">
                 <h2>${user.name}</h2>
-                <p>${user.bio}<br />${user.location}</p>
+                <p>${user.bio}<br /><br />${user.location}</p>
                 
-                <ul>
-                    <li>${user.followers}</li>
-                    <li>${user.following}</li>
-                    <li>${user.public_repos}</li>
+                <ul class="info">
+                    <li>${user.followers}<strong>Followers</strong></li>
+                    <li>${user.following}<strong>Following</strong></li>
+                    <li>${user.public_repos}<strong>Public Repos</strong></li>
                 </ul>
             </div>
         </div>

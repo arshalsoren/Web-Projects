@@ -1,7 +1,74 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
+    background-color: #e899dc;
+    background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     margin: 0;
+}
+
+input {
+    background-color: #AC1363;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+input::placeholder {
+    color: #d4d4d4;
+}
+
+.card {
+    background-color: #6b0f1a;
+    background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+    display: flex;
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 800px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.avatar {
+    border: 5px solid #e899dc;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: #FFFFFF;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 300px;
+}
+
+.user-info ul li{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.3rem ;
 }
