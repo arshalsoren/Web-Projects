@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,41 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <div class="passw">
+                password-shows-here
+                <button>Copy to Clipboard</button>
+            </div>
+        </div>
+        <div class="body">
+            <div class="form-control">
+                <label for="len">Password Length</label>
+                <input id="len" type="number" min="8" max="30" />
+            </div>
+            <div class="form-control">
+                <label for="upper">Include Uppercase Letters</label>
+                <input id="upper" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="lower">Include Lowercase Letters</label>
+                <input id="lower" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="numbers">Include Numbers</label>
+                <input id="numbers" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="symbols">Include Special Characters</label>
+                <input id="symbols" type="checkbox" />
+            </div>
+            <button class="generate" id="generate">
+                Generate Password
+            </button>
+        </div>
+    </div>
 </body>
+
 </html>
